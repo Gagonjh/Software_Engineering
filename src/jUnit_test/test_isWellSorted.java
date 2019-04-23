@@ -1,14 +1,22 @@
 package jUnit_test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static  org.junit.Assert.*;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-class test_isWellSorted {
+import classes.TaskSorter;
+
+import org.junit.Assert;
+
+public class test_isWellSorted {
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	
+	public void Test() {
+		TaskSorter t = new TaskSorter();
+		int zahl = t.hallo(2);
+		assertTrue("Multiplikation falsch",zahl == 4);
+		
 	}
 
 }
